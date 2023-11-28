@@ -1,10 +1,8 @@
 import psutil
 
 def mostrar_rendimiento_memoria():
-    # Obtener información sobre el rendimiento de la memoria
     memoria = psutil.virtual_memory()
 
-    # Mostrar en pantalla el rendimiento de la memoria
     print("Rendimiento de la memoria:")
     print(f"  Total: {memoria.total / (1024 ** 3):.2f} GB")
     print(f"  Disponible: {memoria.available / (1024 ** 3):.2f} GB")
